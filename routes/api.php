@@ -44,3 +44,5 @@ Route::resource('users','UserController');
 |        | PUT|PATCH | api/users/{user}      | users.update  | App\Http\Controllers\UserController@update  --ACTUALIZA EL USUARIO
 |        | DELETE    | api/users/{user}      | users.destroy | App\Http\Controllers\UserController@destroy --ELIMINA EL USUARIO
 */
+
+Route::resource('comments','CommentsController');
