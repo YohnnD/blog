@@ -7,6 +7,10 @@ use App\Topic;
 
 class TopicController extends Controller
 {
+    public function __construct(){
+        $this->middleware('jwt',["only"=>['index','update','destroy','show']]);
+    }
+    
     /**
      * Display a listing of the resource.
      *
