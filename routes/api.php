@@ -37,6 +37,11 @@ Route::group(['prefix' => 'auth'], function ($router) {
 |--------------------------------------------------------------------------
 */
 Route::resource('users','UserController');
+Route::resource('topics','TopicController');
+Route::resource('notepads','NotepadsController');
+Route::resource('comments','CommentController');
+
+
 
 /*
 |        |    POST   | api/users             | users.store   | App\Http\Controllers\UserController@store   --CREA UN NUEVO USUARIO
